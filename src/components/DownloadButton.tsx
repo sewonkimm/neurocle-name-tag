@@ -2,7 +2,7 @@ import React from "react";
 import html2canvas from "html2canvas";
 
 type DownloadButtonProps = {
-  targetRef: React.RefObject<HTMLDivElement>;
+  targetRef: React.RefObject<HTMLDivElement | null>;
 };
 
 const DownloadButton: React.FC<DownloadButtonProps> = ({ targetRef }) => {
